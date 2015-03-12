@@ -96,8 +96,8 @@
 
 //// Uncomment the following if the laser cutter is equipped with a peripheral relay board
 //// to control power to an exhaust fan, water pump, laser power supply, etc.
-#define LASER_PERIPHERALS
-#define LASER_PERIPHERALS_TIMEOUT 30000  // Number of milliseconds to wait for status signal from peripheral control board
+//#define LASER_PERIPHERALS
+//#define LASER_PERIPHERALS_TIMEOUT 30000  // Number of milliseconds to wait for status signal from peripheral control board
 
 //// Uncomment the following line to enable cubic bezier curve movement with the G5 code
 // #define G5_BEZIER
@@ -343,11 +343,19 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 //#define Z_MIN_POS 0
 
 // Lansing Makers Netowrk Laser Cutter
-#define X_MAX_POS 531
+//#define X_MAX_POS 531
+//#define X_MIN_POS 0
+//#define Y_MAX_POS 558
+//#define Y_MIN_POS 0
+//#define Z_MAX_POS 95
+//#define Z_MIN_POS 0
+
+// China Town K40 CO2 Laser Engraver/Cutter
+#define X_MAX_POS 400
 #define X_MIN_POS 0
-#define Y_MAX_POS 558
+#define Y_MAX_POS 400
 #define Y_MIN_POS 0
-#define Z_MAX_POS 95
+#define Z_MAX_POS 75
 #define Z_MIN_POS 0
 
 #define X_MAX_LENGTH (X_MAX_POS - X_MIN_POS)
